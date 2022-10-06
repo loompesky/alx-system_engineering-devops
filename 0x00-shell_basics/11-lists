@@ -1,4 +1,3 @@
 #!/bin/bash
 ls -la
-ls -la /root/alx-system_engineering-devops
 ls -la /boot
