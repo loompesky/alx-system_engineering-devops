@@ -1,8 +1,18 @@
 #!/usr/bin/env bash
-# installs nginx and configures it on a remote server
+# Installs nginx and configures it on a remote server
 
-apt-get -y update
-apt-get -y install nginx
+# Update package repositories
+apt-get update
+
+# Install nginx
+apt-get install -y nginx
+
+# Allow HTTP traffic for Nginx
 ufw allow 'Nginx HTTP'
-echo 'Hello World!' > /var/www/html/index.nginx-debian.html
+
+# Create a custom index page
+echo 'Hello World!' > /var/www/html/index.html
+
+# Start the nginx service
 service nginx start
+
