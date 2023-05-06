@@ -16,8 +16,8 @@ frontend azindotech-frontend
     default_backend azindotech-backend    
 backend azindotech-backend
     balance roundrobin
-    server 103560-web-01 35.175.105.33:80 check
-    server 103560-web-02 52.86.214.98:80 check
+    server 161146-web-01 54.157.178.4:80 check
+    server 103560-web-02 52.236.25.212:80 check
 "
 echo "$config" | sudo tee -a /etc/haproxy/haproxy.cfg
 
